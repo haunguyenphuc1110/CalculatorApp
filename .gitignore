@@ -55,9 +55,26 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
+fastlane/report.xml
 
 # Bundle artifact
 *.jsbundle
 
 # CocoaPods
 /ios/Pods/
+
+# Secrets
+google-services*.json
+GoogleService-Info*.plist
+
+# Fastlane
+dist
+fastlane/report.xml
+fastlane/.env.*
+*.back
+.bundle
+vendor/bundle
+*._api-*.json
+*api-*.json
+
+ios/tmp.xcconfig
