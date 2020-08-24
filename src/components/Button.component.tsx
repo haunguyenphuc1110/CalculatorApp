@@ -9,6 +9,7 @@ import COLORS from '../constants/colors';
 const Button = ({value, onPress}: ButtonProps) => {
   return (
     <TouchableHighlight
+      testID={`button[${value}]`}
       style={[
         styles.inputButton,
         ARRAY_OPERATOR.includes(value) ? {backgroundColor: COLORS.RED} : null,

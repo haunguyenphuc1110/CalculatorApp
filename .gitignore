@@ -78,3 +78,7 @@ vendor/bundle
 *api-*.json
 
 ios/tmp.xcconfig
+
+# Jest
+./jest
+coverage/

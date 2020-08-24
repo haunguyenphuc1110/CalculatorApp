@@ -1,0 +1,747 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Test Snapshot /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#433437",
+        "flex": 2,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 40,
+          "fontWeight": "bold",
+          "padding": 20,
+          "paddingLeft": 30,
+          "textAlign": "right",
+        }
+      }
+    >
+      0
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#ffffff",
+        "flex": 8,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[CLEAR]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          CLEAR
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[DEL]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          DEL
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[1]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          1
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[2]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          2
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[3]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          3
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "#f2274f",
+            },
+          ]
+        }
+        testID="button[/]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          /
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[4]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          4
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[5]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          5
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[6]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          6
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "#f2274f",
+            },
+          ]
+        }
+        testID="button[*]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          *
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[7]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          7
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[8]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          8
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[9]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          9
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "#f2274f",
+            },
+          ]
+        }
+        testID="button[-]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          -
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[0]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          0
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[.]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          .
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            null,
+          ]
+        }
+        testID="button[=]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          =
+        </Text>
+      </View>
+      <View
+        accessible={true}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "borderColor": "#921029",
+              "borderWidth": 1,
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            Object {
+              "backgroundColor": "#f2274f",
+            },
+          ]
+        }
+        testID="button[+]"
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 30,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          +
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

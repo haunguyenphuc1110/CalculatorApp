@@ -31,10 +31,6 @@ const Home = () => {
     initialCalculatorValues,
   );
 
-  console.log('displayValue', calculatorValues.displayValue);
-  console.log('operator', calculatorValues.operator);
-  console.log('canAddDot', calculatorValues.canAddDot);
-
   const setValues = (
     displayValue: string,
     operator: string | null,
