@@ -1,51 +1,33 @@
-# Calculator App
+# CalculatorReactNative
 
-One Paragraph of project description goes here
+Interested in creating a Simple Calculator App using hooks in React Native.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
+Checkout this repo, install dependencies, then start the process with the following:
 
 ```
-Give examples
+> git clone https://github.com/haunguyenphuc1110/CalculatorApp.git
+> cd CalculatorApp
+> yarn android or yarn ios
+> yarn start
 ```
 
-### Installing
+## UI
 
-A step by step series of examples that tell you how to get a development env running
+<p float="left">
+  <img src="./Screenshot_portrait.png" width="250" />
+  <img src="./Screenshot_landscape.png" width="1000" /> 
+</p>
 
-Say what the step will be
+## References
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-- [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-- [Maven](https://maven.apache.org/) - Dependency Management
-- [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+- [React](http://www.dropwizard.io/1.0.2/docs/) - The web framework
+- [React Native](https://maven.apache.org/) - The mobile framework
+- [Typescript](https://rometools.github.io/rome/) - Language used
+- [Hooks](https://reactjs.org/docs/hooks-intro.html) - Feature of React
+- [Jest](https://jestjs.io/) Use for testing
 
 ## Authors
 
-- **Billie Thompson** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
+- **Hau Nguyen Phuc** - [haunguyenphuc1110](https://github.com/haunguyenphuc1110)

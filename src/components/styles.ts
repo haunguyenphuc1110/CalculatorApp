@@ -9,9 +9,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: COLORS.BORDER,
   },
-  inputButtonHighlighted: {
-    backgroundColor: COLORS.HIGHLIGHT,
-  },
   inputButtonText: {
     fontSize: 30,
     fontWeight: 'bold',

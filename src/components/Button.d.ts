@@ -1,5 +1,4 @@
 export interface ButtonProps {
-  highlight: boolean;
-  value: string | number;
+  value: string;
   onPress: () => void;
 }

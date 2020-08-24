@@ -5,19 +5,25 @@ import Button from './components/Button.component';
 import styles from './styles';
 
 export const buttonTitles = [
-  ['c', 'ce'],
-  [1, 2, 3, '/'],
-  [4, 5, 6, '*'],
-  [7, 8, 9, '−'],
-  [0, '.', '=', '+'],
+  ['CLEAR', 'DEL'],
+  ['1', '2', '3', '/'],
+  ['4', '5', '6', '*'],
+  ['7', '8', '9', '-'],
+  ['0', '.', '=', '+'],
 ];
 
-export const ARRAY_SYMBOL_CUSTOM_STYLE = ['/', '+', '−', '*'];
+export const ARRAY_OPERATOR = ['/', '+', '-', '*'];
 
-const initialCalculatorValues = {
-  value: 0,
-  selectedSymbol: '',
-  previousInputValue: 0,
+interface CalculatorValues {
+  displayValue: string;
+  operator: string | null;
+  canAddDot: boolean;
+}
+
+const initialCalculatorValues: CalculatorValues = {
+  displayValue: '0',
+  operator: null,
+  canAddDot: true,
 };
 
 const Home = () => {
@@ -25,61 +31,88 @@ const Home = () => {
     initialCalculatorValues,
   );
 
-  const handleButton = (input: string | number) => {
-    switch (typeof input) {
-      case 'number':
-        let value = calculatorValues.value * 10 + input;
-        setCalculatorValues({
-          ...calculatorValues,
-          value,
-        });
-        break;
+  console.log('displayValue', calculatorValues.displayValue);
+  console.log('operator', calculatorValues.operator);
+  console.log('canAddDot', calculatorValues.canAddDot);
 
-      default:
-        return handleStringInput(input);
-    }
+  const setValues = (
+    displayValue: string,
+    operator: string | null,
+    canAddDot: boolean,
+  ) => {
+    setCalculatorValues({
+      ...calculatorValues,
+      displayValue,
+      operator,
+      canAddDot,
+    });
   };
 
-  const handleStringInput = (input: string | number) => {
+  const handlePress = (input: string) => {
+    const {displayValue, operator, canAddDot} = calculatorValues;
+    const lastString = displayValue.slice(-1);
+    const deletedString = displayValue.slice(0, displayValue.length - 1);
+
     switch (input) {
       case '/':
       case '*':
       case '+':
-      case '−':
-        setCalculatorValues({
-          ...calculatorValues,
-          selectedSymbol: input,
-          previousInputValue: calculatorValues.value,
-          value: 0,
-        });
-        break;
-      case '=':
-        let symbol = calculatorValues.selectedSymbol,
-          value = calculatorValues.value,
-          previousInputValue = calculatorValues.previousInputValue;
-
-        if (!symbol) {
+      case '-':
+      case '.':
+        if (displayValue === '0') {
           return;
         }
-        setCalculatorValues({
-          ...calculatorValues,
-          previousInputValue: 0,
-          // eslint-disable-next-line no-eval
-          value: eval(previousInputValue + symbol + value),
-          selectedSymbol: '',
-        });
+
+        if (input === '.' && !canAddDot) {
+          return;
+        }
+
+        if (input === '.') {
+          setValues(displayValue + input, input, false);
+          return;
+        }
+
+        if (operator) {
+          setValues(
+            displayValue.slice(0, displayValue.length - 1) + input,
+            input,
+            true,
+          );
+          return;
+        }
+        setValues(displayValue + input, input, true);
+
         break;
-      case 'ce':
-        setCalculatorValues({
-          ...calculatorValues,
-          previousInputValue: 0,
-          value: 0,
-          selectedSymbol: '',
-        });
+      case '=':
+        if (ARRAY_OPERATOR.includes(lastString)) {
+          return;
+        }
+
+        // eslint-disable-next-line no-eval
+        const result = eval(displayValue).toString();
+        setValues(result, null, true);
+
+        break;
+      case 'CLEAR':
+        setValues('0', null, true);
         break;
 
-      case 'c':
-        setCalculatorValues({...calculatorValues, value: 0});
+      case 'DEL':
+        setValues(
+          deletedString.length > 0 ? deletedString : '0',
+          ARRAY_OPERATOR.includes(lastString) ? lastString : null,
+          true,
+        );
+        break;
+
+      default:
+        if (displayValue === '0') {
+          setValues(input, null, canAddDot);
+          return;
+        }
+
+        setValues(displayValue + input, null, canAddDot);
+
         break;
     }
   };
@@ -87,20 +120,20 @@ const Home = () => {
   return (
     <View style={styles.rootContainer}>
       <View style={styles.displayContainer}>
-        <Text style={styles.displayText}>{calculatorValues.value}</Text>
+        <Text numberOfLines={1} style={styles.displayText}>
+          {calculatorValues.displayValue}
+        </Text>
       </View>
       <View style={styles.inputContainer}>
         {buttonTitles.map((values, index) => {
           return (
             <View style={styles.inputRow} key={index}>
               {values.map((value, idx) => {
-                const isHighLight = calculatorValues.selectedSymbol === value;
                 return (
                   <Button
                     value={value}
                     key={idx}
-                    onPress={() => handleButton(value)}
-                    highlight={isHighLight}
+                    onPress={() => handlePress(value)}
                   />
                 );
               })}

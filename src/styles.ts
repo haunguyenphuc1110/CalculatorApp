@@ -12,10 +12,11 @@ const styles = StyleSheet.create({
   },
   displayText: {
     color: COLORS.WHITE,
-    fontSize: 38,
+    fontSize: 40,
     fontWeight: 'bold',
     textAlign: 'right',
     padding: 20,
+    paddingLeft: 30,
   },
   inputContainer: {
     flex: 8,
